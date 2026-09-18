@@ -1,30 +1,19 @@
+import java.util.Arrays;
+
 public class Reverse {
-    public static void main(String[] args) {
-        int[] a = {1,2,3,4,5,6,7,8,9,10};
 
-        int count = a.length/5;
-
-        int i = 1;
-
-        for (i; i<=count; i++) {
-
+    public static int[] reverse(int[] arr) {
+        int[] a = new int[arr.length];
+        int j = 0;
+        for (int i=arr.length-1; i>=0; i--) {
+            a[j] = arr[i];
+            j++;
         }
-
-        for (int j = 2i+1; j<=count; j++){
-            
-        }
-
-        for (int k = 3i+2; k<=count; k++) {
-
-        }
-
-        for (int l = 4i+3; m<= count; l++) {
-
-        }
-
-        for (int m = 5i+4; m<= count; m++) {
-
-        }
+        return a;
     }
-     
+
+    public static void main(String[] args) {
+        int[] ar = {1,2,3,4,5};
+        System.out.println(Arrays.toString(reverse(ar)));
+    }
 }
